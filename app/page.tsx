@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Shield, Lock, BarChart3, Share2, Download, Dna } from "lucide-react"
+import { Shield, Lock, BarChart3, Share2, Dna, Github } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -35,14 +35,6 @@ export default function HomePage() {
       />
 
       {/* Technical Readouts */}
-      <div className="absolute top-4 left-4 text-amber-400/60 text-xs font-mono">
-        <div>GENCRYPT-1.0</div>
-        <div>STATUS: ACTIVE</div>
-      </div>
-      <div className="absolute top-4 right-4 text-amber-400/60 text-xs font-mono">
-        <div>SECURITY: MAX</div>
-        <div>ENCRYPTION: AES-256</div>
-      </div>
       <div className="absolute bottom-4 left-4 text-amber-400/60 text-xs font-mono">
         <div>DNA SEQUENCES: PROTECTED</div>
         <div>PRIVACY: GUARANTEED</div>
@@ -62,20 +54,20 @@ export default function HomePage() {
             <span className="text-2xl font-bold text-amber-400 font-mono tracking-wider">gencryption</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
-              FEATURES
+            <a href="#product" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
+              PRODUCT
             </a>
             <a href="#security" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
               SECURITY
             </a>
             <a href="#pricing" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
-              PRICING
+              RESEARCHERS
             </a>
             <Button
               variant="outline"
               className="border-amber-400 text-amber-400 hover:bg-amber-400/10 bg-transparent font-mono"
             >
-              ACCESS
+              BUY $GENCRYPT
             </Button>
           </nav>
         </div>
@@ -84,37 +76,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <main className="relative z-10 px-6 py-16">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Feature Icons */}
-          <div className="flex justify-center items-center space-x-12 mb-20">
-            <div className="flex flex-col items-center space-y-3">
-              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                <Shield className="w-8 h-8 text-amber-400" />
-              </div>
-              <span className="text-sm text-amber-300 font-mono tracking-wide">SECURE VAULT</span>
-            </div>
-            <div className="flex flex-col items-center space-y-3">
-              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                <BarChart3 className="w-8 h-8 text-amber-400" />
-              </div>
-              <span className="text-sm text-amber-300 font-mono tracking-wide">DNA ANALYSIS</span>
-            </div>
-            <div className="flex flex-col items-center space-y-3">
-              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                <Share2 className="w-8 h-8 text-amber-400" />
-              </div>
-              <span className="text-sm text-amber-300 font-mono tracking-wide">CONTROLLED ACCESS</span>
-            </div>
-            <div className="flex flex-col items-center space-y-3">
-              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
-                <Lock className="w-8 h-8 text-amber-400" />
-              </div>
-              <span className="text-sm text-amber-300 font-mono tracking-wide">QUANTUM ENCRYPTION</span>
-            </div>
-          </div>
-
           {/* Main Heading */}
           <div className="mb-8">
-            <div className="text-amber-400 font-mono text-lg mb-4 tracking-widest">MISSION PROTOCOL:</div>
             <h1 className="text-6xl md:text-7xl font-bold text-amber-400 mb-4 leading-tight font-mono tracking-wider">
               gencryption
             </h1>
@@ -122,7 +85,7 @@ export default function HomePage() {
 
           {/* Subtitle */}
           <p className="text-2xl text-amber-300 mb-16 max-w-3xl mx-auto leading-relaxed font-mono tracking-wide">
-            NAVIGATE THE CODE OF LIFE
+            A PROTOCOL TO NAVIGATE YOUR DNA
           </p>
 
           <p className="text-lg text-amber-200/80 mb-16 max-w-2xl mx-auto leading-relaxed">
@@ -135,23 +98,26 @@ export default function HomePage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-black px-10 py-4 text-lg font-bold font-mono tracking-wide rounded-none border-2 border-amber-400 shadow-lg hover:shadow-amber-400/20 transition-all duration-200"
+              asChild
             >
-              <Download className="w-5 h-5 mr-3" />
-              DOWNLOAD PROTOCOL
+              <a href="https://github.com/barisozmen/securegenomics" target="_blank" rel="noopener noreferrer">
+                <Github className="w-5 h-5 mr-3" />
+                CONTRIBUTE ON GITHUB
+              </a>
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400/10 px-10 py-4 text-lg font-bold font-mono tracking-wide rounded-none transition-all duration-200 bg-transparent"
             >
-              MISSION BRIEFING
+              READ THE WHITEPAPER
             </Button>
           </div>
 
           {/* Trust Indicators */}
           <div className="pt-8 border-t border-amber-400/20">
             <p className="text-sm text-amber-400/60 mb-6 font-mono tracking-wide">
-              TRUSTED BY GENETIC RESEARCHERS ACROSS THE GALAXY
+              TRUSTED BY GENETIC RESEARCHERS ACROSS THE WORLD
             </p>
             <div className="flex justify-center items-center space-x-12 text-amber-300/60">
               <div className="flex items-center space-x-2">
@@ -170,6 +136,63 @@ export default function HomePage() {
           </div>
         </div>
       </main>
+
+      {/* Product Section */}
+      <section id="product" className="relative z-10 px-6 py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-amber-400 mb-4 font-mono tracking-wider">
+              PRODUCT
+            </h2>
+            <p className="text-lg text-amber-200/80 max-w-2xl mx-auto font-mono tracking-wide">
+              Advanced genomic security and analysis tools designed for the future of genetic research
+            </p>
+          </div>
+
+          {/* Feature Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-amber-400/5 border border-amber-400/20 rounded-lg backdrop-blur-sm hover:bg-amber-400/10 transition-all duration-200">
+              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                <Shield className="w-8 h-8 text-amber-400" />
+              </div>
+              <h3 className="text-xl font-bold text-amber-400 font-mono tracking-wide">SECURE VAULT</h3>
+              <p className="text-amber-200/80 text-sm leading-relaxed">
+                Military-grade encryption for your genomic data with zero-knowledge protocols
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-amber-400/5 border border-amber-400/20 rounded-lg backdrop-blur-sm hover:bg-amber-400/10 transition-all duration-200">
+              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                <BarChart3 className="w-8 h-8 text-amber-400" />
+              </div>
+              <h3 className="text-xl font-bold text-amber-400 font-mono tracking-wide">DNA ANALYSIS</h3>
+              <p className="text-amber-200/80 text-sm leading-relaxed">
+                Advanced algorithms for comprehensive genetic analysis and insights
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-amber-400/5 border border-amber-400/20 rounded-lg backdrop-blur-sm hover:bg-amber-400/10 transition-all duration-200">
+              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                <Share2 className="w-8 h-8 text-amber-400" />
+              </div>
+              <h3 className="text-xl font-bold text-amber-400 font-mono tracking-wide">CONTROLLED ACCESS</h3>
+              <p className="text-amber-200/80 text-sm leading-relaxed">
+                Granular permissions and secure sharing protocols for your genetic data
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-amber-400/5 border border-amber-400/20 rounded-lg backdrop-blur-sm hover:bg-amber-400/10 transition-all duration-200">
+              <div className="w-16 h-16 bg-amber-400/10 border border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                <Lock className="w-8 h-8 text-amber-400" />
+              </div>
+              <h3 className="text-xl font-bold text-amber-400 font-mono tracking-wide">QUANTUM ENCRYPTION</h3>
+              <p className="text-amber-200/80 text-sm leading-relaxed">
+                Future-proof encryption that withstands quantum computing threats
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
