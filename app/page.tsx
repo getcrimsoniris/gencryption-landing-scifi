@@ -147,7 +147,7 @@ export default function HomePage() {
               PROTOCOL
             </h2>
             <p className="text-lg text-amber-200/80 max-w-2xl mx-auto font-mono tracking-wide">
-              A set of tools that allow you to apply cutting-edge genomic analysis tools to your data without ever revealing it.
+              A set of tools that allow you to apply cutting-edge genomic analysis tools to your data without ever revealing anything to a third party.
             </p>
           </div>
 
