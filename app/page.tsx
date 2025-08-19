@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Shield, Lock, BarChart3, Share2, Dna, Github } from "lucide-react"
+import Footer from "@/components/Footer"
 
 export default function HomePage() {
   return (
@@ -48,19 +49,21 @@ export default function HomePage() {
       <header className="relative z-10 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-500 transform rotate-45 flex items-center justify-center">
-              <Dna className="w-5 h-5 text-black transform -rotate-45" />
-            </div>
-            <span className="text-2xl font-bold text-amber-400 font-mono tracking-wider">gencryption</span>
+            <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+              <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-500 transform rotate-45 flex items-center justify-center">
+                <Dna className="w-5 h-5 text-black transform -rotate-45" />
+              </div>
+              <span className="text-2xl font-bold text-amber-400 font-mono tracking-wider">gencryption</span>
+            </a>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#product" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
-              PRODUCT
+            <a href="#protocol" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
+              PROTOCOL
             </a>
             <a href="#security" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
               SECURITY
             </a>
-            <a href="#pricing" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
+            <a href="/researchers" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
               RESEARCHERS
             </a>
             <Button
@@ -89,8 +92,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-lg text-amber-200/80 mb-16 max-w-2xl mx-auto leading-relaxed">
-            Your genomic data is the most valuable information you possess. Secure it with military-grade encryption,
-            analyze it with advanced algorithms, and control who accesses your genetic blueprint.
+            Your genomic data is the most valuable information you possess. Secure and analyze it with the same technologies that protect trillions of dollars in cryptocurrency.
           </p>
 
           {/* CTA Buttons */}
@@ -138,14 +140,14 @@ export default function HomePage() {
       </main>
 
       {/* Product Section */}
-      <section id="product" className="relative z-10 px-6 py-20">
+      <section id="protocol" className="relative z-10 px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-amber-400 mb-4 font-mono tracking-wider">
-              PRODUCT
+              PROTOCOL
             </h2>
             <p className="text-lg text-amber-200/80 max-w-2xl mx-auto font-mono tracking-wide">
-              Advanced genomic security and analysis tools designed for the future of genetic research
+              A set of tools that allow you to apply cutting-edge genomic analysis tools to your data without ever revealing it.
             </p>
           </div>
 
@@ -193,6 +195,58 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Security Section */}
+      <section id="security" className="relative z-10 px-6 py-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Placeholder for Security Image */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="w-full max-w-md h-80 bg-amber-400/10 border-2 border-dashed border-amber-400/30 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                <div className="text-center">
+                  <Lock className="w-16 h-16 text-amber-400/40 mx-auto mb-4" />
+                  <p className="text-amber-400/60 font-mono tracking-wide">SECURITY VISUALIZATION</p>
+                  <p className="text-amber-400/40 text-sm mt-2">Placeholder for security diagram</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Security Content */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-4xl md:text-5xl font-bold text-amber-400 mb-6 font-mono tracking-wider">
+                SECURITY
+              </h2>
+              <p className="text-lg text-amber-200/80 leading-relaxed mb-8 font-mono tracking-wide">
+                Gencryption relies on advances in homomorphic encryption, which allow you to share your encrypted data with a third party for analysis without allowing it to be decrypted.
+              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-amber-400 rounded-full"></div>
+                  <span className="text-amber-300 font-mono tracking-wide">Zero-knowledge computation protocols</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-amber-400 rounded-full"></div>
+                  <span className="text-amber-300 font-mono tracking-wide">Mathematical guarantees on data privacy</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-3 h-3 bg-amber-400 rounded-full"></div>
+                  <span className="text-amber-300 font-mono tracking-wide">Cryptographic proof of security</span>
+                </div>
+              </div>
+              
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400/10 px-8 py-3 text-lg font-bold font-mono tracking-wide rounded-none transition-all duration-200 bg-transparent"
+              >
+                READ THE WHITEPAPER
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <Footer />
     </div>
   )
 }
