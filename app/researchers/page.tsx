@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { Shield, Lock, BarChart3, Share2, Dna, Github } from "lucide-react"
+import { Shield, Lock, Dna, Github } from "lucide-react"
 import Footer from "@/components/Footer"
+import Link from "next/link"
 
 export default function ResearchersPage() {
   return (
@@ -49,23 +50,23 @@ export default function ResearchersPage() {
       <header className="relative z-10 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
               <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-orange-500 transform rotate-45 flex items-center justify-center">
                 <Dna className="w-5 h-5 text-black transform -rotate-45" />
               </div>
               <span className="text-2xl font-bold text-amber-400 font-mono tracking-wider">gencryption</span>
-            </a>
+            </Link>
           </div>
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="/#protocol" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
-              PROTOCOL
-            </a>
-            <a href="/#security" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
-              SECURITY
-            </a>
-            <a href="/researchers" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
-              RESEARCHERS
-            </a>
+                      <nav className="hidden md:flex items-center space-x-8">
+              <Link href="/#protocol" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
+                PROTOCOL
+              </Link>
+              <Link href="/#security" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
+                SECURITY
+              </Link>
+              <Link href="/researchers" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
+                RESEARCHERS
+              </Link>
             <Button
               variant="outline"
               className="border-amber-400 text-amber-400 hover:bg-amber-400/10 bg-transparent font-mono"
@@ -88,7 +89,7 @@ export default function ResearchersPage() {
 
           {/* Hero Text */}
           <p className="text-2xl text-amber-300 mb-16 max-w-3xl mx-auto leading-relaxed font-mono tracking-wide">
-          Access a global network of research participants while maintaining zero liability for sensitive genetic information. Our homomorphic encryption ensures data never leaves the participant's control.
+          Access a global network of research participants while maintaining zero liability for sensitive genetic information. Our homomorphic encryption ensures data never leaves the participant&apos;s control.
           </p>
 
           {/* CTA Buttons */}
