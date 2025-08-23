@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   description:
     "Privacy-focused desktop app for securely storing, analyzing and sharing your genomic data with end-to-end encryption.",
   generator: "v0.app",
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
