@@ -171,9 +171,12 @@ export default function GencryptionManifestoPage() {
                 variant="outline"
                 size="lg"
                 className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400/10 px-8 py-3 text-lg font-bold font-mono tracking-wide rounded-none transition-all duration-200 bg-transparent"
+                asChild
               >
-                <Github className="w-5 h-5 mr-3" />
-                CONTRIBUTE ON GITHUB
+                <a href="https://github.com/gencryption/gencryption" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-5 h-5 mr-3" />
+                  CONTRIBUTE ON GITHUB
+                </a>
               </Button>
               <Button
                 variant="outline"
