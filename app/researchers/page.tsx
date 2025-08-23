@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { Shield, Lock, Dna, Github } from "lucide-react"
+import { Shield, Lock, Github } from "lucide-react"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
-import Link from "next/link"
 
 export default function ResearchersPage() {
   return (
