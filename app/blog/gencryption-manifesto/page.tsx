@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Shield, Lock, Dna, Github } from "lucide-react"
+import { Github } from "lucide-react"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import Link from "next/link"

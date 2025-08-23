@@ -27,12 +27,14 @@ export default function Header() {
           <Link href="/researchers" className="text-amber-300/80 hover:text-amber-300 transition-colors font-mono">
             RESEARCHERS
           </Link>
-          <Button
-            variant="outline"
-            className="border-amber-400 text-amber-400 hover:bg-amber-400/10 bg-transparent font-mono"
-          >
-            BUY $GENCRYPT
-          </Button>
+          <Link href="/gencrypt">
+            <Button
+              variant="outline"
+              className="border-amber-400 text-amber-400 hover:bg-amber-400/10 bg-transparent font-mono"
+            >
+              BUY $GENCRYPT
+            </Button>
+          </Link>
         </nav>
       </div>
     </header>
